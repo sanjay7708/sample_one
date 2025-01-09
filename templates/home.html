@@ -1,0 +1,9 @@
+<div>
+    {% for item in data %}
+        <div>
+            <h1>{{item.name}}</h1>
+            <p>{{item.price}}</p>
+        </div>
+    {% endfor %}
+    <button><a href="{% url 'insert' %}">Update</a></button>
+</div>
